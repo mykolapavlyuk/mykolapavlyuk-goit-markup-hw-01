@@ -10,30 +10,33 @@
     --accent-color: #2196F3;
     --primary-bg-color: #fff;
     --button-secondary-color: #F5F4FA;
+    --color-logo:#000000;
+    --bg-section-hero: #2F303A;
+
 }
 
 body{
     background-color: var(--primary-bg-color);
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' , sans-serif;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
-h2 {
+h2,h3 {
     color: var(--title-text-color);
 }
 /* --------------------Стилі хедер------------------- */
 
 .logo {
-    color: #000000;
+    color: var(--color-logo);
 
         font-family: 'Raleway', sans-serif;
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 1,19;
+        line-height: 1.19;
         letter-spacing: 0.03em;
 
         text-decoration: none;
@@ -72,10 +75,9 @@ h2 {
 .button {
     color: var(--title-text-color);
     background-color: var(--primary-bg-color);
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1, 8;
+    line-height: 1.8;
 
     cursor: pointer;
 
@@ -83,13 +85,13 @@ h2 {
 
 .button.primary {
     background-color: var(--accent-color);
-    color: var(--primary-bg-color)
+    color: var(--primary-bg-color);
 
 }
 
 .button-secondary {
     background-color: var(--button-secondary-color);
-    color: #212121;
+    color: var(--title-text-color);
 
 }
 
@@ -99,14 +101,14 @@ h2 {
 
 .site-nav .link {
     color: var(--title-text-color);
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1,14;
+        line-height: 1.14;
         letter-spacing: 0.02em;
 
         text-decoration: none;
+
+        
 }
 
 .site-nav .link:hover,
@@ -120,13 +122,14 @@ h2 {
 .auth-nav .link {
     color: var(--primary-text-color);
 
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     text-decoration: none;
+
+    
  }
  .auth-nav .link:hover {
     color: var(--accent-color);
@@ -135,38 +138,50 @@ h2 {
  /* -------------Section 1 шапка сайту----------------- */
  .section-hero {
     color: var(--primary-bg-color);
-    background-color: #2F303A;
+    background-color: var(--bg-section-hero);
 
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,3;
+    line-height: 1.3;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
  }
 
+.button.primary:hover,
+.button.primary:focus {
+ background-color:  #188CE8;
+}
+
  /* ------------Section 2--------------- */
+ .visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
 
 .feature-list-title {
-    color: var(--title-text-color);
 
-        font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 14px;
-        line-height: 1,14;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 }
 .feature-list-text {
 color: var(--primary-text-color);
 
-font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 1,7;
+line-height: 1.7;
 letter-spacing: 0.03em;
 }
 
@@ -174,45 +189,46 @@ letter-spacing: 0.03em;
 /* ---------------section 3------------- */
 
 .job {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,16;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.job-list {
+    width: 370px;
 }
 
 
 
 /* ----------------section 4---------------- */
 .team {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 1,16;
+        line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
 }
 
+.img-list {
+    width: 270px;
+}
+
 .team-list .title {
-    font-family: 'Roboto',sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 1,18;
+        line-height: 1.18;
         text-align: center;
         letter-spacing: 0.03em;
 }
 .team-list .text {
 color: var(--primary-text-color);
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,18;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -231,7 +247,7 @@ color: var(--primary-text-color);
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        line-height: 1,19;
+        line-height: 1.19;
         letter-spacing: 0.03em; 
 
         text-decoration: none;
@@ -278,13 +294,14 @@ color: var(--accent-color);
 
 /* СТИЛІ ДО ВКЛАДКИ PORTFOLIO */
 
+
 /* portfolio button nav */
 
 .button-secondary{
 
         font-weight: 500;
         font-size: 16px;
-        line-height:1,6;
+        line-height:1.6;
         text-align: center;
         letter-spacing: 0.03em;
 }
@@ -297,42 +314,31 @@ color: var(--accent-color);
 
 
 /* ----------menu-------- */
-.link {
-    text-decoration: none;
+
+
+.menu-img {
+    width: 370px;
 }
 
 
-
 .title {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
+    
         font-weight: 700;
         font-size: 18px;
-        line-height: 36px;
+        line-height: 2.0;
         letter-spacing: 0.06em;
 
 }
 
 .text {
-color: var(--primary-text-color);
-
-    text-decoration: none;
-
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
+    color: var(--primary-text-color);
         font-weight: 400;
         font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.03em;
+        line-height: 1.87;
+    }
 
-}
-
-
-
-
+    .link >a {
+text-decoration: none;
+    }
 
 
-
-
-
- }
